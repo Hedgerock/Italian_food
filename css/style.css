@@ -120,6 +120,7 @@ h1, h2, h3, h5, p, a , li, span {
     height: 100vh;
     max-height: 1080px;
     min-height: 720px;
+    overflow: hidden;
 }
 
 .main-menu-container,
@@ -283,6 +284,7 @@ h1, h2, h3, h5, p, a , li, span {
     width: 90px;
     height: 90px;
     object-fit: contain;
+    animation: up-down linear 3s infinite alternate;
 }
 
 .slogan__text {
@@ -362,18 +364,30 @@ h1, h2, h3, h5, p, a , li, span {
     position: absolute;
     bottom: 35px;
     left: -70px;
+    animation: up-down linear 2s infinite alternate;
 }
 
 .top-meal__leaf {
     position: absolute;
     bottom: 45px;
     right: -25px;
+    animation: up-down linear 2s infinite alternate;
 }
 
 .top-meal__noodle {
     position: absolute;
     top: -25px;
     left: -40px;
+    animation: up-down linear 2s infinite alternate;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .spaghetti__picture {
@@ -384,6 +398,7 @@ h1, h2, h3, h5, p, a , li, span {
     bottom: -150px;
     left: -140px;
     filter: drop-shadow(-42.21px -8.205px 73.5px rgba(12,13,12,0.21));
+    animation: up-down linear 3s infinite alternate;
 }
 
 .main-content-container {
@@ -449,6 +464,15 @@ h1, h2, h3, h5, p, a , li, span {
     padding-top: 3.2rem;
 }
 
+@keyframes rotation {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .meal:nth-child(3n + 1) {
     margin-left: 0;
 }
@@ -468,6 +492,7 @@ h1, h2, h3, h5, p, a , li, span {
     max-width: 375px;
     height: 375px;
     margin-bottom: 3.4rem;
+    animation: rotation linear 120s infinite;
 }
 
 .meal__picture img {
@@ -921,11 +946,7 @@ h1, h2, h3, h5, p, a , li, span {
         padding: 3rem 2rem 0 2rem;
     }
     .meals {
-        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, 
-        rgba(211,210,154,1) 50%, 
-        rgba(211,210,154,1) 65%, 
-        rgba(211,210,154,1) 75%, 
-        rgba(255,255,255,1) 75%);
+        background: initial;
         justify-content: space-around;
     }
     .meal {
@@ -1069,6 +1090,7 @@ h1, h2, h3, h5, p, a , li, span {
     }
     .spaghetti__picture {
         left: -210px;
+        top: 550px;
     }
 
     .top-meal {
@@ -1498,6 +1520,14 @@ h1, h2, h3, h5, p, a , li, span {
     .social-media__link {
         width: 25px;
         height: 25px;
+    }
+    @keyframes up-down {
+        0% {
+            transform: translateY(-10px);
+        }
+        100% {
+            tranform: translateY(0);
+        }
     }
 }
 

@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homework v.1.02</title>
+        <title>Italian food</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     </head>
@@ -57,7 +58,7 @@
                     <div class="menu-layout menu-layout_hover"></div>
                 </div>
                 <div class="promotions">
-                    <div class="slogan">
+                    <div class="slogan animate__animated animate__fadeInRight">
                         <div class="slogan-elements">
                             <img class="slogan-elements__picture" src="img/meal-elements/Leaf.png" alt="">
                             <h2 class="slogan__subtitle slogan__subtitle_leaf">Are You Hungry?</h2>
@@ -73,17 +74,17 @@
                         </div>
                         <a class="preposition__link" href="#">ORDER NOW</a>
                     </div>
-                    <div class="top-meal">
+                    <div class="top-meal wow animate__animated animate__fadeInRight">
                         <img class="top-meal__main-picture" src="./img/meals/top-meal.png" alt="">
                         <img class="top-meal__tomato" src="./img/meal-elements/tomato.png" alt="">
                         <img class="top-meal__leaf" src="./img/meal-elements/leaf_reverse.png" alt="">
                         <img class="top-meal__noodle" src="./img/meal-elements/Pasta.png" alt="">
                     </div>
                 </div>
-                <div class="spaghetti">
-                    <img class="spaghetti__picture" src="./img/meal-elements/Spaghetti.png" alt="">
-                </div>
             </div>
+        </div>
+        <div class="spaghetti">
+            <img class="spaghetti__picture" src="./img/meal-elements/Spaghetti.png" alt="">
         </div>
         <div class="main-content">
             <div class="main-content-container">
@@ -147,7 +148,7 @@
                     Voluptates sint quod dolor molestiae alias veniam nostrum quisquam. 
                     Quibusdam fuga inventore labore doloremque laudantium cumque, in reprehenderit!
                 </p>
-                <div class="slider">
+                <div class="slider wow animate__animated animate__fadeInDown" data-wow-delay=".2s">
                     <div class="slider-block">
                         <img class="slider-block__picture" src="./img/meals/first-meal.png" alt="">
                         <img class="slider-block__picture slider-block__picture_middle" src="./img/meals/second-meal.png" alt="">
@@ -160,7 +161,7 @@
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
-                <div class="meal-prepositions">
+                <div class="meal-prepositions wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                     <a class="meal-prepositions__element" href="#">
                         <img class="meal-prepositions__picture" src="./img/backgrounds/bg-image-first.png" alt="">
                         <div class="meal-prepositions__text">
@@ -246,5 +247,9 @@
             </div>
         </div>
         <script src="./scripts/index.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
